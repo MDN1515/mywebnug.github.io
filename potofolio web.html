@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Muhammad Daud Nugraha</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="head">
+        <img src="telkom.png" >
+        <nav>
+            <a href="">Home</a>
+            <a href="aboutme">About</a>
+            <a href="projectme">Project</a>
+        </nav>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+            
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+            
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+              });
+            });
+            </script>
+    </header>
+    <div class="container" id ="hero">
+        <div class="desc">
+            <h1 class="hi">Hi, I am </h1>
+            <h1 class="name">   Muhammad Daud Nugraha
+            </h1>
+            <h3>Front end</h3>
+            <buttton class="hire">Hire me</buttton>
+            <button class="download">Donwload CV</button>
+        </div>
+        <div class="imghero">
+            <img src="programming.jpg" width="180px" height="180px">
+        </div>
+    </div>
+
+    <div class="about" id="aboutme">
+        <h2 class="t-1">About me<br></h2>
+        <p>Nama saya Muhammad Daud Nugraha, saya masih sekolah dan pendidikan saya baru sampai smk kelas 11 dan masih berlanjut. Saya belajar program seperti html, java, python dan css di sekolah saya.</p>
+    </div>
+    <div class="project">
+        <h1 class="t-project">Project</h1>
+        <p>Di projek ini saya memiliki beberapa keahlian diantaranya Web Development, Graphic Design, dan App UI/UX.</p>
+    </div>
+
+    <img src="web d.jpg"width="250" height="250">
+    <img src="web d1.jpg"width="250" height="250">
+    <img src="gd.jpeg"width="250" height="250">
+    <img src="gd1.jpeg"width="250" height="250">
+    <img src="app.jpeg"width="250" height="250">
+    <img src="app1.jpeg"width="250" height="250">
+
+    <div class="project">
+        <h1 class="t-project"></h1>
+        <p>ini hanya percobaan, maaf atas hal - hal yang kurang website saya.</p>
+    </div>
+</body>
+</html>
